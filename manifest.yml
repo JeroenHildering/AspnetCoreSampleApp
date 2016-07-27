@@ -1,0 +1,10 @@
+---
+applications:
+- name: aspnetcore-sample-app
+  memory: 256M
+  instances: 2
+  domain: apps.lab.devops.lol
+  stack: cflinuxfs2
+  buildpack: https://github.com/cloudfoundry-community/dotnet-core-buildpack.git
+  services:
+  - autoscaler
